@@ -2,15 +2,13 @@
 #include <stdio.h>
 
 /**
+ * printf_int - print a integer value
  *
- *
- *
- *
- *
- *
+ * @format: print integer
+ * Return: 
 */
 
-void my_printf(const char *format, ...)
+void printf_int(const char *format, ...)
 {
     va_list list;
     va_start(list, format);
