@@ -15,10 +15,7 @@ int format_char(va_list args);
 int format_string(va_list args);
 int format_mod(va_list args);
 int (*get_function(const char *con_spec))(va_list);
-void format_int(const char *format, ...);
-
-
-
+int format_int(va_list args);
 
 
 #endif
