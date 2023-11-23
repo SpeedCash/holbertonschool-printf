@@ -1,8 +1,9 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdarg.h>
 
 /**
- * print_mod - print %.
+ * format_mod - print %.
  *
  * @args: arguments.
  *
