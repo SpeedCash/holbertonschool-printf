@@ -8,7 +8,7 @@
 * Return:
 */
 
-void printf_int(const char *format, ...)
+void format_int(const char *format, ...)
 {
 	va_list list;
 	va_start(list, format);
