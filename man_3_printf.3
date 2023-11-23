@@ -1,0 +1,51 @@
+.\" Manpage for _printf clone
+.TH _printf clone "V 1.0" "_printf clone Programmer's Manual"
+
+.SH NAME
+_printf clone - formatted output conversion command: man ./man_3_printf.3
+
+.SH SYNOPSIS
+.B #include "main.h"
+.PP
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+.PP
+The _printf function is a custom implementation of the standard library function printf. It produces output according to a format, writing to stdout. This function handles the following conversion specifiers:
+.RS
+.nf
+- %c: Character
+- %s: String
+- %d: Signed decimal integer
+- %i: Signed integer
+- %%: Percent sign
+.RE
+.PP
+Note: This implementation does not support flags, field width, precision, or length modifiers.
+
+.SH EXAMPLES
+.B Example usage in main.c:
+.PP
+#include "main.h"
+.PP
+_printf("Character: %c\n", 'A');
+.PP
+Output: Character: A
+.PP
+_printf("String: %s\n", "Hello, World!");
+.PP
+Output: String: Hello, World!
+.PP
+_printf("Percent: %%\n");
+.PP
+Output: Percent: %
+.PP
+_printf("Number: %d\n", 100);
+.PP
+Output: Number: 100
+
+.SH RETURN VALUE
+On successful execution, _printf returns the number of characters printed (excluding the terminating null byte). If an error occurs or if the format is NULL, a negative number is returned.
+
+.SH AUTHORS
+Mickaël PERRET - Thierry CRAVERO
