@@ -10,22 +10,12 @@
 * Return: char count.
 */
 
-int format_char(va_list args);
-int format_string(va_list args);
-int format_mod(va_list args);
-int format_int(va_list args);
-typedef struct
-{
-    char specifiers;
-    int (*f)(va_list);
-} specifiers_t;
-
-int get_function(char con_spec, va_list args)
+int (*get_function(const char *con_spec))(va_list)
 {
     int i = 0;
     int count_x = 0;
 
-    specifiers_t spec[] = {
+    op_t spec[] = {
         {'c', format_char},
         {'s', format_string},
         {'%', format_mod},
@@ -36,7 +26,7 @@ int get_function(char con_spec, va_list args)
 
     while (spec[i].specifiers)
     {
-        if (con_spec == spec[i].specifiers)
+        if (*con_spec == *spec[i].f)
             count_x += spec[i].f(args);
         i++;
     }
