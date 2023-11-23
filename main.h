@@ -4,7 +4,7 @@
 
 typedef struct op
 {
-	char *op;
+	char op;
 	int (*f)(va_list args);
 } op_t;
 
