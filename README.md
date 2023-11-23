@@ -1,3 +1,6 @@
+
+![Logo](https://cravero-consulting.com/wp-content/uploads/2023/11/68747470733a2f2f7777772e6765656b73756c74642e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032302f30332f7072696e74662e6a7067.jpeg)
+
 **Project Title:** _printf clone
 
 **Description:**
@@ -37,3 +40,14 @@ valgrind ./output
 
 **Flowchart**
 The flowchart detailing the logic of _printf clone is included in the project files. It outlines the handling of different format specifiers and the overall structure of the function.
+
+
+## Screenshots
+
+![App Screenshot](https://cravero-consulting.com/wp-content/uploads/2023/11/flowchart_printf.jpg)
+
+
+## Authors
+
+- [@Mikaël PERRET](https://github.com/mkl-74)
+- [@Thierry CRAVERO](https://github.com/SpeedCash)
