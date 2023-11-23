@@ -4,7 +4,7 @@
 - [@Thierry CRAVERO](https://github.com/SpeedCash)
 
 ## Rôles et Contributions : 
-"développeur principaux", "testeurs", "rédacteurs de documentation".
+"développeurs principaux", "testeurs", "rédacteurs de documentation".
 
 ## Remerciements : 
 Remerciements à Haris et Kevin.
